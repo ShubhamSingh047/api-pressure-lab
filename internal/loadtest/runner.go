@@ -211,4 +211,4 @@ func waitUntil(ctx context.Context, deadline time.Time) bool {
 	}
 }
 
-// Pacing note (2023-05-05 22:47:57): worker pool buffer tuned for concurrent request pacing
+// Pacing note (2023-05-06 17:11:30): worker pool buffer tuned for concurrent request pacing
