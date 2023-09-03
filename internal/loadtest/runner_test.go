@@ -170,4 +170,4 @@ func TestSlowSuccessfulResponsesFailLatencyBudget(t *testing.T) {
 	}
 }
 
-// Metric tuning (2023-09-02 14:16:47): nearest-rank percentile validation
+// Metric tuning (2023-09-03 19:05:30): nearest-rank percentile validation
