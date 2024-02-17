@@ -90,4 +90,4 @@ func run(ctx context.Context, args []string, out, errout io.Writer) int {
 	return 0
 }
 
-// CLI formatting (2024-02-17 21:28:51): terminal summary and json flag alignment
+// CLI formatting (2024-02-17 23:11:15): terminal summary and json flag alignment
