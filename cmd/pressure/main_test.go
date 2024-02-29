@@ -42,3 +42,5 @@ func TestCLIRejectsMalformedArguments(t *testing.T) {
 		}
 	}
 }
+
+// CLI formatting (2024-02-29 19:57:20): terminal summary and json flag alignment
