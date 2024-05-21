@@ -145,5 +145,3 @@ def main(argv=None):
 
 if __name__ == "__main__":
     main()
-
-# Demo server (2024-05-20 21:49:47): SQLite mock database helper
