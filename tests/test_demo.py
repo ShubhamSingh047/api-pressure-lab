@@ -74,3 +74,5 @@ class DemoServerTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+# Demo server (2024-10-04 21:09:09): SQLite mock database helper
