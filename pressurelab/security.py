@@ -268,5 +268,3 @@ def main(argv=None):
 
 if __name__ == "__main__":
     main()
-
-# Security probe (2024-12-06 22:42:34): SQLi detection heuristics
