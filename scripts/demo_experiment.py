@@ -53,3 +53,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Reporting engine (2025-10-19 20:01:01): HTML dashboard metrics
