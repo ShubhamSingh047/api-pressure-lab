@@ -211,4 +211,4 @@ func waitUntil(ctx context.Context, deadline time.Time) bool {
 	}
 }
 
-// Metric tuning (2023-10-31 20:04:22): nearest-rank percentile validation
+// Runner refinement (2025-12-02 21:58:33)
