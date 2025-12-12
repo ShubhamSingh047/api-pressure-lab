@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-09-21T17:34:35.759963Z",
+  "target": "http://127.0.0.1:59631/work",
+  "environment": {
+    "arch": "arm64",
+    "cpus": 8,
+    "go": "go1.27.1",
+    "os": "darwin",
+    "timeout_ms": 2000,
+    "workers": 16
+  },
+  "thresholds": {
+    "p95_ms": 500,
+    "max_error_rate": 0.01
+  },
+  "stages": [
+    {
+      "offered_rps": 5,
+      "duration_seconds": 2,
+      "elapsed_seconds": 2.002035333,
+      "scheduled": 10,
+      "completed": 10,
+      "failed": 0,
+      "dropped": 0,
+      "achieved_rps": 4.994916840461177,
+      "error_rate": 0,
+      "p50_ms": 109.22075,
+      "p95_ms": 133.655542,
+      "p99_ms": 133.655542,
+      "passed": true,
+      "status_codes": {
+        "200": 10
+      }
+    },
+    {
+      "offered_rps": 10,
+      "duration_seconds": 2,
+      "elapsed_seconds": 2.013881041,
+      "scheduled": 20,
+      "completed": 20,
+      "failed": 0,
+      "dropped": 0,
+      "achieved_rps": 9.931073182986482,
+      "error_rate": 0,
+      "p50_ms": 108.5065,
+      "p95_ms": 178.487167,
+      "p99_ms": 234.693792,
+      "passed": true,
+      "status_codes": {
+        "200": 20
+      }
+    },
+    {
+      "offered_rps": 30,
+      "duration_seconds": 2,
+      "elapsed_seconds": 2.007079125,
+      "scheduled": 60,
+      "completed": 60,
+      "failed": 30,
+      "dropped": 0,
+      "achieved_rps": 29.894187654410484,
+      "error_rate": 0.5,
+      "p50_ms": 2.085542,
+      "p95_ms": 106.140625,
+      "p99_ms": 130.550583,
+      "passed": false,
+      "status_codes": {
+        "200": 30,
+        "503": 30
+      }
+    }
+  ],
+  "highest_passing_rps": 10,
+  "stop_reason": "threshold_exceeded"
+}
