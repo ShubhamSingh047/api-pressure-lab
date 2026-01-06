@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-21T17:34:42.324880+00:00",
+  "target": "http://127.0.0.1:59767/items",
+  "parameter": "q",
+  "assessment": "potential",
+  "proof": false,
+  "notice": "Signals are regression hints, not proof. No data extraction was attempted.",
+  "findings": [
+    {
+      "kind": "boolean_difference",
+      "confidence": "potential",
+      "detail": "Repeated true/false controls produced a stable response difference."
+    },
+    {
+      "kind": "error_signal",
+      "confidence": "potential",
+      "detail": "A quote probe produced a database-like error response."
+    }
+  ],
+  "errors": [],
+  "probes": {
+    "baseline": [
+      {
+        "status": 200,
+        "length": 19,
+        "digest": "3f28e3a85f84c42b852dc4cddb1a4d634ba948a40ec4d35a8e127c54e793902c",
+        "error_signal": false
+      },
+      {
+        "status": 200,
+        "length": 19,
+        "digest": "3f28e3a85f84c42b852dc4cddb1a4d634ba948a40ec4d35a8e127c54e793902c",
+        "error_signal": false
+      },
+      {
+        "status": 200,
+        "length": 19,
+        "digest": "3f28e3a85f84c42b852dc4cddb1a4d634ba948a40ec4d35a8e127c54e793902c",
+        "error_signal": false
+      }
+    ],
+    "control": [
+      {
+        "status": 200,
+        "length": 12,
+        "digest": "eef46741adfc3a9f76294d3b78f37a45f113092ac9d44ee77c7a038a88ff09a1",
+        "error_signal": false
+      },
+      {
+        "status": 200,
+        "length": 12,
+        "digest": "eef46741adfc3a9f76294d3b78f37a45f113092ac9d44ee77c7a038a88ff09a1",
+        "error_signal": false
+      },
+      {
+        "status": 200,
+        "length": 12,
+        "digest": "eef46741adfc3a9f76294d3b78f37a45f113092ac9d44ee77c7a038a88ff09a1",
+        "error_signal": false
+      }
+    ],
+    "boolean_true": [
+      {
+        "status": 200,
+        "length": 19,
+        "digest": "3f28e3a85f84c42b852dc4cddb1a4d634ba948a40ec4d35a8e127c54e793902c",
+        "error_signal": false
+      },
+      {
+        "status": 200,
+        "length": 19,
+        "digest": "3f28e3a85f84c42b852dc4cddb1a4d634ba948a40ec4d35a8e127c54e793902c",
+        "error_signal": false
+      },
+      {
+        "status": 200,
+        "length": 19,
+        "digest": "3f28e3a85f84c42b852dc4cddb1a4d634ba948a40ec4d35a8e127c54e793902c",
+        "error_signal": false
+      }
+    ],
+    "boolean_false": [
+      {
+        "status": 200,
+        "length": 12,
+        "digest": "eef46741adfc3a9f76294d3b78f37a45f113092ac9d44ee77c7a038a88ff09a1",
+        "error_signal": false
+      },
+      {
+        "status": 200,
+        "length": 12,
+        "digest": "eef46741adfc3a9f76294d3b78f37a45f113092ac9d44ee77c7a038a88ff09a1",
+        "error_signal": false
+      },
+      {
+        "status": 200,
+        "length": 12,
+        "digest": "eef46741adfc3a9f76294d3b78f37a45f113092ac9d44ee77c7a038a88ff09a1",
+        "error_signal": false
+      }
+    ],
+    "error": [
+      {
+        "status": 500,
+        "length": 79,
+        "digest": "11b02c0fab37dc27b5510bceb880d09adcafe510cf3c267cf3c1206221d11a8e",
+        "error_signal": true
+      }
+    ]
+  }
+}
