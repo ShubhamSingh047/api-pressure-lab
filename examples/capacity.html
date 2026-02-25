@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>API Pressure Lab report</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1020;--panel:#151d33;--ink:#edf3ff;--muted:#a9b5ce;--cyan:#55d6be;--red:#ff7d8b;--line:#2b3858}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#172a46,var(--bg) 44%);color:var(--ink);font:15px/1.55 system-ui,sans-serif}
+main{max-width:1180px;margin:auto;padding:54px 24px 72px}h1{font-size:clamp(2rem,5vw,4.1rem);line-height:1;margin:.2em 0}.eyebrow{color:var(--cyan);font-weight:750;letter-spacing:.12em;text-transform:uppercase}.lede,.meta{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:30px 0}.card,section{background:#151d33e8;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 18px 55px #0004}.value{font-size:2rem;font-weight:800}.label{color:var(--muted)}section{margin-top:18px;overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th,td{text-align:right;padding:12px;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}.pass td:last-child{color:var(--cyan);font-weight:800}.fail td:last-child{color:var(--red);font-weight:800}code{color:var(--cyan)}
+</style></head><body><main>
+<div class="eyebrow">API Pressure Lab</div><h1>Capacity experiment report</h1>
+<p class="lede">This is a workload-specific estimate from tested offered rates, not a universal maximum for the API.</p>
+<div class="cards"><div class="card"><div class="label">Highest passing tested offered rate</div><div class="value">10 req/s</div></div>
+<div class="card"><div class="label">p95 threshold</div><div class="value">500 ms</div></div>
+<div class="card"><div class="label">Maximum error rate</div><div class="value">1.00%</div></div></div>
+<section><h2>Stages</h2><table><thead><tr><th>Offered req/s</th><th>Achieved req/s</th><th>Completed / scheduled</th><th>Failed</th><th>Dropped</th><th>Error rate</th><th>p50 ms</th><th>p95 ms</th><th>p99 ms</th><th>Status codes</th><th>Result</th></tr></thead><tbody><tr class="pass"><td>5</td><td>4.99</td><td>10 / 10</td><td>0</td><td>0</td><td>0.00%</td><td>109.22</td><td>133.66</td><td>133.66</td><td>200: 10</td><td>Pass</td></tr><tr class="pass"><td>10</td><td>9.93</td><td>20 / 20</td><td>0</td><td>0</td><td>0.00%</td><td>108.51</td><td>178.49</td><td>234.69</td><td>200: 20</td><td>Pass</td></tr><tr class="fail"><td>30</td><td>29.89</td><td>60 / 60</td><td>30</td><td>0</td><td>50.00%</td><td>2.09</td><td>106.14</td><td>130.55</td><td>200: 30, 503: 30</td><td>Fail</td></tr></tbody></table></section>
+<section><h2>Methodology</h2><p>Each row is one paced stage. Passing requires a nonempty result set, no dropped arrivals, and latency and error rate within the configured thresholds. The runner stops at the first failing stage.</p><p><strong>Stop reason:</strong> threshold_exceeded</p></section>
+<section><h2>Run context</h2><p><strong>Target:</strong> <code>http://127.0.0.1:59631/work</code></p><p><strong>Started:</strong> 2026-09-21T17:34:35.759963Z</p><p class="meta">arch: arm64 · cpus: 8 · go: go1.27.1 · os: darwin · timeout_ms: 2000 · workers: 16</p></section>
+</main></body></html>
