@@ -90,4 +90,4 @@ This project makes concurrency control, load-generation accuracy, experimental l
 
 MIT. See [LICENSE](LICENSE).
 
-<!-- Documentation polish (2026-06-17 20:39:50) -->
+<!-- Documentation polish (2026-06-18 21:56:04) -->
