@@ -16,4 +16,4 @@ Python report accepts this JSON and generates escaped standalone HTML with stage
 
 Write behavior tests first. Verify pacing and accounting, concurrency limit, HTTP failures/timeouts, body limits, cancellation, validation, SQLi positive/negative controls, HTML escaping, and an end-to-end local demo. Include GitHub Actions checks and reproducible commands. Commit complete features with current timestamps. Publish to ShubhamSingh047/api-pressure-lab and pin once usable. No invented benchmark or resume claims.
 
-<!-- Documentation polish (2026-07-21 22:00:29) -->
+<!-- Documentation polish (2026-07-22 20:35:13) -->
