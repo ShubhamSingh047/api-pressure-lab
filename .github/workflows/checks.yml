@@ -22,5 +22,3 @@ jobs:
       - run: go build -o bin/pressure ./cmd/pressure
       - run: python3 -m unittest discover -s tests -v
       - run: python3 scripts/demo_experiment.py --output-dir /tmp/pressure-demo
-
-# CI config (2026-05-01 19:29:19)

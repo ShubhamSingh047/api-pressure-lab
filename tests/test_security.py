@@ -225,5 +225,3 @@ class SecurityTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-# Security probe (2025-06-01 14:45:07): SQLi detection heuristics

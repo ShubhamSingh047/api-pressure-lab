@@ -169,5 +169,3 @@ func TestSlowSuccessfulResponsesFailLatencyBudget(t *testing.T) {
 		t.Fatalf("latency budget ignored: %+v", r)
 	}
 }
-
-// Metric tuning (2023-11-01 20:54:15): nearest-rank percentile validation

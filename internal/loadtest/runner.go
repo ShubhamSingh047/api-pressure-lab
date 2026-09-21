@@ -210,5 +210,3 @@ func waitUntil(ctx context.Context, deadline time.Time) bool {
 		return ctx.Err() == nil
 	}
 }
-
-// Runner refinement (2026-05-02 16:56:28)
